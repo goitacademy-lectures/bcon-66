@@ -1,4 +1,4 @@
-# bcon-65
+# bcon-66
 
 ## План заняття (16.10.2023):
 
@@ -7,7 +7,8 @@
 - Cкелет HTML-документа: `doctype`, `html`, `head`, `body`
 - Метаінформація документа: `title`, `meta`
 - Поняття семантичної розмітки
-- Секційні теги: `header`, `footer`, `main`, `section`, `nav`, `article`, `aside`
+- Секційні теги: `header`, `footer`, `main`, `section`, `nav`, `article`,
+  `aside`
 - Розмітка текста: `h1...h6`, `p`, `ol || ul`, `a`, `span`
 - Зображення: `img` та `figure`
 - Абсолютний та відносний шлях до файлу
