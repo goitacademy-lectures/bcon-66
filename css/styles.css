@@ -1,0 +1,362 @@
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+
+  color: #111111;
+  background-color: #fafafa;
+  /**
+  Default properties:
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  */
+}
+
+ul,
+ol {
+  list-style: none;
+  /* list-style-type: none; */
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+address {
+  font-style: normal;
+}
+.ingridients-title,
+.made-title,
+.products-title,
+.bestsellers-title,
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.accent {
+  color: #fd9222;
+}
+.btn {
+  font-weight: 600;
+  line-height: 1.21;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-accent {
+  background-color: #fd9222;
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+.btn-light {
+  color: #ffffff;
+}
+.btn-light:hover,
+.btn-light:focus {
+  color: #fd9222;
+}
+.btn-dark {
+  font-size: 18px;
+  color: currentColor;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {
+}
+.header-nav {
+}
+.header-logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.header-logo-italic {
+  font-style: italic;
+}
+.header-logo-icon {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #fd9222;
+}
+.header-socials {
+}
+.header-socials-item {
+}
+.header-socials-link {
+}
+.header-socials-icon {
+}
+/**
+  |============================
+  | Hero styles
+  |============================
+*/
+.hero {
+  background-color: rgba(17, 17, 17, 0.7);
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+/**
+  |============================
+  | Benefits styles
+  |============================
+*/
+.benefits {
+  background-color: #1e1823;
+}
+.benefits-list {
+}
+.benefits-list-item {
+}
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+}
+.benefits-desc {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+/**
+  |============================
+  | Ingridients styles
+  |============================
+*/
+.ingridients {
+}
+.ingridients-list {
+}
+.ingridients-item {
+  background-color: #ffffff;
+}
+.ingridients-ill {
+}
+.ingridients-caption {
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/**
+  |============================
+  | Made styles
+  |============================
+*/
+.made {
+}
+.made-title {
+}
+.made-pic {
+}
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-item {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+/**
+  |============================
+  | Products styles
+  |============================
+*/
+.products {
+}
+.products-title {
+}
+.products-list {
+}
+.products-item {
+  background: #ffffff;
+}
+.products-ill {
+}
+.products-heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-category {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.products-price {
+  font-weight: 600;
+  line-height: 1.21;
+
+  background-color: #fafafa;
+}
+/**
+  |============================
+  | Bestsellers styles
+  |============================
+*/
+.bestsellers {
+}
+.bestsellers-title {
+}
+.bestsellers-list {
+}
+.bestsellers-item {
+  background-color: #ffffff;
+}
+.bestsellers-img {
+}
+.bestsellers-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/**
+  |============================
+  | Reviews styles
+  |============================
+*/
+.reviews {
+}
+.reviews-title {
+}
+.reviews-list {
+}
+.reviews-item {
+  background-color: #ffffff;
+}
+.reviews-avatar {
+}
+.reviews-author {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+.reviews-text {
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+  background-color: #1e1823;
+}
+.footer-slogan {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.footer-slogan-accent {
+  color: #fd9222;
+}
+.footer-address {
+}
+.footer-address-subject {
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-socials {
+}
+.footer-contatcs {
+}
+.footer-menu {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
+}
+/* Socials */
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+
+/* Contacts */
+.contacts {
+}
+.contacts-item {
+}
+.contacts-link {
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #fd9222;
+}
