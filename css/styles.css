@@ -9,22 +9,11 @@ body {
 
   color: #111111;
   background-color: #fafafa;
-  /**
-  Default properties:
-  font-family: serif;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  text-align: left;
-  color: #000000;
-  background-color: #ffffff;
-  */
 }
 
 ul,
 ol {
   list-style: none;
-  /* list-style-type: none; */
 }
 a {
   text-decoration: none;
@@ -37,6 +26,7 @@ button {
 address {
   font-style: normal;
 }
+
 .ingridients-title,
 .made-title,
 .products-title,

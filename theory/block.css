@@ -1,0 +1,13 @@
+.text {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: lightsalmon;
+}
+
+/*
+a*n + b
+a - період циклу
+n - лічильник циклу
+b - зміщення
+*/
