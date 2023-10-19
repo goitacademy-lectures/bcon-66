@@ -61,7 +61,7 @@ img {
 
 [data-child] {
   /* width: 120px; */
-  /* height: 120px; */
+  height: 120px;
   font-size: 3em;
   line-height: 120px;
   color: white;
