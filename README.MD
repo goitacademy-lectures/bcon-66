@@ -24,6 +24,16 @@
   - `:nth-child()`
   - `:nth-last-child()`
 
+## План заняття (19.10.2023):
+
+- Поняття `flex-контейнер` та `flex-елемент`
+- Властивість display: `flex || inline-flex`
+- Flex-вісі та властивість `flex-direction`
+- Вирівнювання flex-елементів на осі, властивості `justify-content`,
+  `align-items`
+- Багаторядкові flex-контейнери та властивість `flex-wrap`
+- Властивість flex-елемента: `width` та `flex-basis`, `flex-grow`, `flex-shrink`
+
 ---
 
 [Посилання на макет 🎨](https://www.figma.com/file/SHNrA7r9RBXLqDUVYZjL1g/Simply-Chocolate?type=design&node-id=606%3A34&mode=design&t=nRzD3pyVqUjvLrgn-1)
