@@ -68,6 +68,7 @@ a {
 button {
   font-family: inherit;
   color: currentColor;
+  cursor: pointer;
 }
 address {
   font-style: normal;
@@ -131,7 +132,6 @@ img {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: var(--btn-radius);
-  cursor: pointer;
 }
 .btn-accent {
   background-color: var(--accent-cl);
@@ -302,8 +302,23 @@ img {
   padding: 0;
   background-color: transparent;
   border: transparent;
-  cursor: pointer;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--accent-cl);
+}
+
+.hero-btn-icon {
+  --fill: var(--accent-cl);
+  fill: currentColor;
+}
+
+.hero-btn:hover .hero-btn-icon,
+.hero-btn:focus .hero-btn-icon {
+  --fill: var(--secondary-cl);
+}
+
 /**
   |============================
   | Benefits styles
@@ -364,7 +379,6 @@ img {
   border: 1px solid transparent;
   background-color: var(--secondary-cl);
 }
-/* a * n + b */
 .ingridients-item:nth-child(4n + 1) {
   color: var(--secondary-cl);
   background-color: var(--accent-cl);
@@ -376,7 +390,14 @@ img {
 .ingridients-item:nth-child(2n) {
   border-color: var(--accent-cl);
 }
-
+.ingridients-icon {
+  fill: none;
+  stroke: var(--secondary-cl);
+}
+.ingridients-item:nth-child(2n) .ingridients-icon {
+  fill: none;
+  stroke: var(--accent-cl);
+}
 .ingridients-ill {
 }
 .ingridients-caption {
@@ -405,6 +426,14 @@ img {
   overflow: hidden;
 }
 .made-pic {
+}
+.made-btn {
+  background-color: transparent;
+  border: none;
+}
+.made-btn-icon {
+  fill: var(--light-cl);
+  stroke: var(--light-cl);
 }
 .made-right-side {
   width: 516px;
@@ -601,7 +630,9 @@ img {
   line-height: 1.29;
   color: var(--secondary-cl);
 }
-.footer-socials {
+.footer-socials .socials-link {
+  color: var(--secondary-cl);
+  border-color: var(--light-cl-10);
 }
 .footer-contatcs {
 }
@@ -646,7 +677,7 @@ img {
   color: var(--primary-cl);
 
   border-radius: 10px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--dark-cl-10);
 }
 .socials-link:hover,
 .socials-link:focus {
