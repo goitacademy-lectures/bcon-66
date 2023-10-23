@@ -38,7 +38,7 @@
           </a>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#home">Home</a>
+              <a class="header-nav-link current" href="#home"> Home</a>
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link" href="#made">How it’s made?</a>
@@ -111,18 +111,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section">
-        <div class="container">
-          <div class="wrapper">
-            <img
-              src="./images/others/girl.png"
-              alt=""
-              width="410"
-              height="565"
-            />
-          </div>
-        </div>
-      </section> -->
       <!-- Benefits section -->
       <section class="benefits">
         <div class="container">
@@ -303,7 +291,7 @@
                 flavor
               </h3>
               <ol class="made-list">
-                <li class="made-item">
+                <li class="made-item" data-name="Sale 10%">
                   Heat the milk in a saucepan without bringing it to a boil. Add
                   sugar and cocoa powder.
                 </li>
@@ -311,7 +299,7 @@
                   >At the same time, prepare a water bath. Melt the butter on
                   it.
                 </li>
-                <li class="made-item">
+                <li class="made-item" data-name="Sale 20%">
                   "Mix" the milk mixture and already liquid butter. Mix
                   thoroughly with a silicone spatula so that the mass becomes
                   uniform and silky.
@@ -532,7 +520,9 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn-dark" type="button">Leave a review</button>
+          <button class="btn btn-dark" type="button" data-modal-open
+            >Leave a review</button
+          >
         </div>
       </section>
     </main>
@@ -621,5 +611,23 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="modal-btn"
+          type="button"
+          aria-label="Modal close button"
+          data-modal-close
+        >
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
