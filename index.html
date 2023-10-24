@@ -22,6 +22,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -170,7 +172,11 @@
             <span class="accent">taste</span> sensation
           </h2>
           <ul class="ingridients-list card-set">
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -183,7 +189,11 @@
               />
               <h3 class="ingridients-caption">MILK CHOCOLATE</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -196,7 +206,11 @@
               />
               <h3 class="ingridients-caption">MILK</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="900"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -209,7 +223,11 @@
               />
               <h3 class="ingridients-caption">NUTS</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="1200"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -222,7 +240,11 @@
               />
               <h3 class="ingridients-caption">SEMI-SWEET CHOCOLATE</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="1500"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -235,7 +257,11 @@
               />
               <h3 class="ingridients-caption">CACAO</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="1800"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -248,7 +274,11 @@
               />
               <h3 class="ingridients-caption">RASPBERRY</h3>
             </li>
-            <li class="ingridients-item card-set-item">
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="2100"
+            >
               <svg class="ingridients-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -430,37 +460,67 @@
           </h2>
           <ul class="bestsellers-list card-set">
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-1.jpg"
-                alt="Chocolate with nuts"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-1.jpg"
+                  alt="Chocolate with nuts"
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-desc">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
               </div>
             </li>
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-2.jpg"
-                alt="Chocolate with fruits"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-2.jpg"
+                  alt="Chocolate with fruits"
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-desc">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-caption">CHOCOLATE WITH FRUITS</h3>
               </div>
             </li>
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-3.jpg"
-                alt="Dark chocolate"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-3.jpg"
+                  alt="Dark chocolate"
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-desc">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-caption">DARK CHOCOLATE</h3>
               </div>
@@ -613,7 +673,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button
           class="modal-btn"
@@ -625,9 +685,86 @@
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
         </button>
+
+        <strong class="modal-caption">
+          LEAVE A REVIEW ABOUT
+          <span class="modal-caption-accent">OUR CHOCOLATE</span>
+        </strong>
+
+        <form class="modal-form" name="reviews-form">
+          <div class="form-box">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box">
+            <label class="form-label" for="user-phone">Phone number</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="">Comment</label>
+            <textarea
+              name=""
+              id=""
+              rows="10"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <label for="">
+            <input type="checkbox" />
+            <span class="custom-checkbox">
+              <svg class="custom-checkbox-icon" width="20" height="20">
+                <use href=""></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
+    <!-- AOS scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
