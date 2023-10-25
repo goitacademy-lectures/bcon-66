@@ -668,12 +668,21 @@
               <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+
+          <form class="footer-form" name="subscribe-form">
+            <input
+              class="footer-form-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn btn-accent" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           class="modal-btn"
@@ -691,7 +700,7 @@
           <span class="modal-caption-accent">OUR CHOCOLATE</span>
         </strong>
 
-        <form class="modal-form" name="reviews-form">
+        <form class="modal-form" name="reviews-form" autocomplete="off">
           <div class="form-box">
             <label class="form-label" for="user-name">Name</label>
             <div class="form-field">
@@ -700,9 +709,22 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
+                minlength="2"
+                placeholder="Mango Red"
               />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <span class="form-status-error">
+                Name must contain min 2 char
+              </span>
+              <svg class="form-icon-status" width="24" height="24">
+                <use class="error" href="./images/icons.svg#icon-error"></use>
+                <use
+                  class="success"
+                  href="./images/icons.svg#icon-success"
+                ></use>
               </svg>
             </div>
           </div>
@@ -714,6 +736,8 @@
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
+                placeholder="mango_red@mail.com"
               />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -728,6 +752,7 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
+                pattern="\+38\(0\d{2}\)\d{3}\-\d{2}\-\d{2}"
               />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -735,28 +760,44 @@
             </div>
           </div>
 
-          <div>
-            <label for="">Comment</label>
+          <div class="form-box">
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              name=""
-              id=""
-              rows="10"
+              class="form-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
               placeholder="Enter text"
+              required
+              minlength="7"
             ></textarea>
           </div>
 
-          <label for="">
-            <input type="checkbox" />
+          <label class="form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user_agreement"
+              checked
+            />
             <span class="custom-checkbox">
-              <svg class="custom-checkbox-icon" width="20" height="20">
-                <use href=""></use>
+              <svg class="custom-checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
             I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            <a class="form-agreement-link" href="">Privacy Policy</a>
           </label>
 
-          <button class="btn btn-accent" type="submit">Send</button>
+          <!-- <label class="form-agreement">
+            <input class="form-checkbox" type="checkbox" />
+            I accept the terms and conditions of the
+            <a class="form-agreement-link" href="">Privacy Policy</a>
+          </label> -->
+
+          <button class="btn btn-accent" type="submit" data-modal-send>
+            Send
+          </button>
         </form>
       </div>
     </div>
@@ -765,6 +806,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/form.js"></script> -->
+    <script src="./js/form.js"></script>
   </body>
 </html>
