@@ -94,21 +94,37 @@ img {
   margin: -1px;
 }
 
+.hide {
+  display: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* Mobile screen */
 .container {
-  width: 1168px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  /*
-  outline: 2px solid red;
-  outline-offset: -2px; */
-}
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
 
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+/* Desktop screen */
+@media only screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
+}
 .ingridients-title,
 .made-title,
 .products-title,
@@ -181,7 +197,10 @@ img {
   | Header styles
   |============================
 */
-.header {
+@media only screen and (max-width: 767.98px) {
+  .header {
+    padding: 20px 0 14px;
+  }
 }
 .header-container {
   display: flex;
@@ -195,7 +214,7 @@ img {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-right: 365px;
+  /* margin-right: 365px; */
 
   font-size: 18px;
   font-weight: 700;
@@ -223,6 +242,11 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+@media only screen and (max-width: 767.98px) {
+  .header-nav-list {
+    display: none;
+  }
 }
 .header-nav-item {
 }
@@ -261,13 +285,33 @@ img {
   border-radius: 2px;
 }
 
-.header-socials {
+@media only screen and (max-width: 767.98px) {
+  .header-socials.socials {
+    display: none;
+  }
 }
 .header-socials-item {
 }
 .header-socials-link {
 }
 .header-socials-icon {
+}
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
+.header-menu-icon {
+  stroke: var(--primary-cl);
 }
 /**
   |============================
@@ -376,30 +420,50 @@ img {
   |============================
 */
 .benefits {
-  padding: 50px 0;
-  background-color: #1e1823;
+  padding: 20px 0;
+  background-color: var(--primary-bg-cl);
+}
+@media only screen and (min-width: 768px) {
+  .benefits {
+    padding: 50px 0;
+  }
 }
 .benefits-list {
   display: flex;
-  justify-content: center;
-  gap: 88px;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
-.benefits-item {
-  position: relative;
-  width: 308px;
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    row-gap: 44px;
+    column-gap: 88px;
+  }
 }
-.benefits-item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -44px;
-  transform: translateY(-50%);
+@media only screen and (min-width: 1168px) {
+  .benefits-list {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .benefits-item {
+    position: relative;
+    width: 308px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .benefits-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%);
 
-  display: block;
-  width: 1px;
-  height: 124px;
+    display: block;
+    width: 1px;
+    height: 124px;
 
-  background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 .benefits-wrapper {
   display: flex;
@@ -412,8 +476,6 @@ img {
 
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.benefits-icon {
 }
 .benefits-subtitle {
   margin-bottom: 18px;
