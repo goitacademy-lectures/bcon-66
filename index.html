@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -91,7 +91,12 @@
             </a>
           </li>
         </ul>
-        <button class="header-menu" type="button">
+        <button
+          class="header-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-menu-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -100,13 +105,13 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero hide">
+      <section class="hero">
         <div class="hero-container container">
-          <h1 class="hero-title">
+          <h1 class="hero-title hide">
             Treat yourself or a loved one to our&nbsp;finest ingredients for a
             moment of pure delight!
           </h1>
-          <div class="hero-controls">
+          <div class="hero-controls hide">
             <button class="btn btn-accent" type="button">Buy now</button>
             <button class="btn btn-light" type="button">How it’s made</button>
             <button class="hero-btn" type="button">
@@ -170,7 +175,7 @@
         </div>
       </section>
       <!-- Ingridients section -->
-      <section class="ingridients section hide">
+      <section class="ingridients section">
         <div class="container">
           <h2 class="ingridients-title">
             It all adds up to one exceptional
@@ -187,10 +192,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-1.png    1x,
+                  ./images/ingridients/img-1@2x.png 2x
+                "
                 src="./images/ingridients/img-1.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">MILK CHOCOLATE</h3>
             </li>
@@ -204,10 +214,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-2.png    1x,
+                  ./images/ingridients/img-2@2x.png 2x
+                "
                 src="./images/ingridients/img-2.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">MILK</h3>
             </li>
@@ -221,10 +236,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-3.png    1x,
+                  ./images/ingridients/img-3@2x.png 2x
+                "
                 src="./images/ingridients/img-3.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">NUTS</h3>
             </li>
@@ -238,10 +258,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-4.png    1x,
+                  ./images/ingridients/img-4@2x.png 2x
+                "
                 src="./images/ingridients/img-4.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">SEMI-SWEET CHOCOLATE</h3>
             </li>
@@ -255,10 +280,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-5.png    1x,
+                  ./images/ingridients/img-5@2x.png 2x
+                "
                 src="./images/ingridients/img-5.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">CACAO</h3>
             </li>
@@ -272,10 +302,15 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-6.png    1x,
+                  ./images/ingridients/img-6@2x.png 2x
+                "
                 src="./images/ingridients/img-6.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">RASPBERRY</h3>
             </li>
@@ -289,11 +324,69 @@
               </svg>
               <img
                 class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-7.png    1x,
+                  ./images/ingridients/img-7@2x.png 2x
+                "
                 src="./images/ingridients/img-7.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
+              <h3 class="ingridients-caption">COCONUT OIL</h3>
+            </li>
+            <li
+              class="ingridients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="2100"
+            >
+              <svg class="ingridients-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1168px)"
+                  srcset="
+                    ./images/ingridients/img-7_desk@1x.webp 1x,
+                    ./images/ingridients/img-7_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1168px)"
+                  srcset="
+                    ./images/ingridients/img-7_desk@1x.png 1x,
+                    ./images/ingridients/img-7_desk@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ingridients/img-7_tab@1x.png 1x,
+                    ./images/ingridients/img-7_tab@2x.png 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ingridients/img-7_mob@1x.png 1x,
+                    ./images/ingridients/img-7_mob@2x.png 2x
+                  "
+                />
+                <img
+                  class="ingridients-ill"
+                  src=" ./images/ingridients/img-7_mob@1x.png"
+                  alt=""
+                  width="236"
+                  height="176"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="ingridients-caption">COCONUT OIL</h3>
             </li>
           </ul>
@@ -686,6 +779,85 @@
       </div>
     </footer>
 
+    <!-- Webstudio footer -->
+    <footer class="w-footer">
+      <div class="w-container w-footer-container">
+        <div class="w-top">
+          <a href="" class="w-logo">Web<span>Studio</span></a>
+          <p class="w-desc">
+            Increase the flow of customers and sales for your business with
+            digital marketing &amp; growth solutions.
+          </p>
+        </div>
+        <div class="w-middle">
+          <p class="w-footer-caption">Social media</p>
+          <ul class="w-socials socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-bottom">
+          <p class="w-footer-caption">Subscribe</p>
+          <form class="w-form">
+            <label class="w-label">
+              <input class="w-input" type="text" placeholder="E-mail" />
+            </label>
+            <button class="w-btn" type="submit">Subscribe ✅</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
     <!-- Modal window -->
     <div class="backdrop is-hidden hide" data-modal>
       <div class="modal">
@@ -806,11 +978,107 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg class="menu-toggle-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contatcs-item">
+          <a class="mobile-contacts-link active" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-contatcs-item">
+          <a class="mobile-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- AOS scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/animations.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script src="./js/animations.js"></script> -->
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/form.js"></script>
   </body>
 </html>
